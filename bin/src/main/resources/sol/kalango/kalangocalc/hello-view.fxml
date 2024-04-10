@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+
+<SplitPane dividerPositions="0.25" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="226.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sol.kalango.kalangocalc.AppController">
+    <items>
+        <AnchorPane minWidth="154.0">
+            <children>
+                <ImageView fitHeight="89.0" fitWidth="93.0" layoutX="28.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@kalango_logo.jpg" />
+                    </image>
+                </ImageView>
+                <Label layoutX="9.0" layoutY="51.0" text="KALANGO SOLUÇÕES" />
+                <ToggleButton layoutX="13.0" layoutY="185.0" mnemonicParsing="false" prefHeight="3.0" prefWidth="31.0" text="...T" />
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="464.0" prefHeight="224.0" prefWidth="456.0">
+            <children>
+                <Pane layoutX="14.0" layoutY="24.0" prefHeight="179.0" prefWidth="268.0">
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="32.0" stroke="BLACK" strokeType="INSIDE" width="174.0">
+                            <fill>
+                                <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.0520833320915699" green="0.5921052694320679" blue="0.4120979607105255" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </fill>
+                        </Rectangle>
+                        <Label layoutX="14.0" layoutY="8.0" text="Combustível" />
+                        <Label layoutX="122.0" layoutY="8.0" prefHeight="17.0" prefWidth="39.0" text="Preço" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="149.0" layoutY="31.0" stroke="BLACK" strokeType="INSIDE" width="174.0">
+                            <fill>
+                                <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.9519290328025818" green="1.0" blue="0.5879629850387573" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </fill>
+                        </Rectangle>
+                        <Label fx:id="combustivel1" layoutX="8.0" layoutY="44.0" prefHeight="25.0" prefWidth="89.0" />
+                        <Label fx:id="combustivel2" layoutX="8.0" layoutY="69.0" prefHeight="25.0" prefWidth="104.0" />
+                        <Label fx:id="combustivel3" layoutX="8.0" layoutY="94.0" prefHeight="25.0" prefWidth="104.0" />
+                        <Label fx:id="combustivel4" layoutX="8.0" layoutY="119.0" prefHeight="25.0" prefWidth="89.0" />
+                        <Label fx:id="combustivel5" layoutX="8.0" layoutY="144.0" prefHeight="25.0" prefWidth="89.0" />
+                        <Line endX="-166.0" endY="-15.0" layoutX="167.0" layoutY="83.0" startX="6.0" startY="-15.0" />
+                        <Label fx:id="preco1" layoutX="122.0" layoutY="48.0" text="Preco1" />
+                        <Label fx:id="preco2" layoutX="122.0" layoutY="73.0" text="Preco2" />
+                        <Label fx:id="preco3" layoutX="122.0" layoutY="98.0" text="Preco3" />
+                        <Label fx:id="preco4" layoutX="121.0" layoutY="123.0" text="Preco4" />
+                        <Label fx:id="preco5" layoutX="121.0" layoutY="148.0" text="Preco5" />
+                        <RadioButton fx:id="lucro1" layoutX="184.0" layoutY="48.0" mnemonicParsing="false" onAction="#handleLucro1OnAction1" text="lucro1" />
+                        <RadioButton fx:id="lucro2" layoutX="184.0" layoutY="73.0" mnemonicParsing="false" onAction="#handleLucro1OnAction2" text="lucro2" />
+                        <RadioButton fx:id="lucro3" layoutX="183.0" layoutY="97.0" mnemonicParsing="false" onAction="#handleLucro1OnAction3" text="lucro3" />
+                        <RadioButton fx:id="lucro4" layoutX="184.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleLucro1OnAction4" text="lucro4" />
+                        <RadioButton fx:id="lucro5" layoutX="183.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleLucro1OnAction5" text="lucro5" />
+                        <Line endX="-166.0" endY="-15.0" layoutX="167.0" layoutY="108.0" startX="6.0" startY="-15.0" />
+                        <Line endX="-166.0" endY="-15.0" layoutX="167.0" layoutY="133.0" startX="6.0" startY="-15.0" />
+                        <Line endX="-166.0" endY="-15.0" layoutX="167.0" layoutY="158.0" startX="6.0" startY="-15.0" />
+                    </children>
+                </Pane>
+                <Pane fx:id="editor" layoutX="284.0" layoutY="14.0" prefHeight="202.0" prefWidth="173.0" visible="false">
+                    <children>
+                        <TextField fx:id="precoVenda" layoutX="24.0" layoutY="34.0" prefHeight="25.0" prefWidth="115.0" promptText="Preço de Venda" />
+                        <TextField fx:id="precoCompra" layoutX="24.0" layoutY="69.0" prefHeight="25.0" prefWidth="115.0" promptText="Preço de Compra" />
+                        <TextField fx:id="frete" layoutX="24.0" layoutY="105.0" prefHeight="25.0" prefWidth="115.0" promptText="Frete" />
+                        <TextField fx:id="taxaCartao" layoutX="24.0" layoutY="137.0" prefHeight="25.0" prefWidth="115.0" promptText="Taxa de Cartão" />
+                        <Button fx:id="botaoAlterar" layoutX="82.0" layoutY="169.0" mnemonicParsing="false" onAction="#handleBotaoAlterarAction" prefHeight="18.0" prefWidth="56.0" text="Alterar" />
+                        <Label fx:id="combustivelEditor" alignment="CENTER" layoutX="35.0" layoutY="10.0" prefHeight="17.0" prefWidth="93.0" textAlignment="CENTER" />
+                        <CheckBox fx:id="valorReal1" layoutX="150.0" layoutY="38.0" mnemonicParsing="false" onAction="#handleValorRealOnAction1" />
+                        <CheckBox fx:id="valorReal2" layoutX="150.0" layoutY="73.0" mnemonicParsing="false" onAction="#handleValorRealOnAction2" />
+                        <CheckBox fx:id="valorReal3" layoutX="150.0" layoutY="109.0" mnemonicParsing="false" onAction="#handleValorRealOnAction3" />
+                        <CheckBox fx:id="valorReal4" layoutX="150.0" layoutY="141.0" mnemonicParsing="false" onAction="#handleValorRealOnAction4" />
+                    </children>
+                </Pane>
+            </children></AnchorPane>
+    </items>
+</SplitPane>

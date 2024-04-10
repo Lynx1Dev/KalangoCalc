@@ -1,0 +1,42 @@
+[
+  {
+    "nomeCombustivel": "Gasolina Aditivada",
+    "taxaCartao": 0.0,
+    "frete": 0.0,
+    "precoCompra": 0.0,
+    "precoVenda": 0.0,
+    "lucroBruto": 0.0
+  },
+  {
+    "nomeCombustivel": "Diesel S500 Ad",
+    "taxaCartao": 0.0,
+    "frete": 0.0,
+    "precoCompra": 0.0,
+    "precoVenda": 0.0,
+    "lucroBruto": 0.0
+  },
+  {
+    "nomeCombustivel": "Diesel S10 Ad",
+    "taxaCartao": 0.0,
+    "frete": 0.0,
+    "precoCompra": 0.0,
+    "precoVenda": 0.0,
+    "lucroBruto": 0.0
+  },
+  {
+    "nomeCombustivel": "Gasolina Comum",
+    "taxaCartao": 0.0,
+    "frete": 0.0,
+    "precoCompra": 0.0,
+    "precoVenda": 0.0,
+    "lucroBruto": 0.0
+  },
+  {
+    "nomeCombustivel": "Etanol",
+    "taxaCartao": 0.0,
+    "frete": 0.0,
+    "precoCompra": 0.0,
+    "precoVenda": 0.0,
+    "lucroBruto": 0.0
+  }
+]
